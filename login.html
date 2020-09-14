@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大事件-登录/注册</title>
+  <!-- 导入layui的样式 -->
+  <link rel="stylesheet" href="assets/lib/layui/css/layui.css"/>
+  <!-- 导入自己的样式表 -->
+  <link rel="stylesheet" href="assets/css/login.css"/>
+</head>
+<body>
+  <!-- 头部logo区 -->
+  <div class="layui-main">
+    <img src="assets/images/logo.png" alt=""/>
+  </div>
+  <!-- 登录注册区 -->
+  <div class="loginAndRegBox">
+    <div class="title-box"></div>
+    <!-- 登录的div -->
+    <div class="login-box">
+      <!-- 登录的表单 -->
+      <form class="layui-form" action="">
+        <!-- 用户名 -->
+        <div class="layui-form-item">
+            <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">  
+        </div>
+        <!-- 密码 -->
+        <div class="layui-form-item">
+          <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">  
+      </div>
+      <div class="layui-form-item"></div>
+      <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">立即提交</button>
+      </form>
+      <!-- javascript:;防止点a链接发生跳转 -->
+      <a href="javascript:;" id="link_reg">去注册账号</a>
+    </div>
+    <!-- 注册的div -->
+    <div class="red-box">
+      <a href="javascript:;" id="link_login">去登录</a>
+
+    </div>
+  </div>
+  <!-- 导入jquery -->
+  <script src="assets/lib/jquery.js"></script>
+  <!-- 导入自己的jquery脚本 -->
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
