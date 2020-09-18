@@ -1,4 +1,4 @@
-$(function () { 
+$(function () {
   // 调用函数getUserInfo()获取用户基本信息
   getUserInfo()
 
@@ -36,19 +36,19 @@ function getUserInfo() {
         return layui.layer.msg('获取用户信息失败')
       }
       // 封装一个函数为渲染头像的方法。因为在这里写步骤多
-      // renderAvatar(res.data)
-    },
+      renderAvatar(res.data)
+    }
     // 不论成功还是失败，最终都会调用complete这个回调函数
     // complete: function (res) {
-      // console.log('执行了complete回调');
-      // console.log(res);
-      // 在complete回调函数中可以使用res.responseJSON拿到服务器响应回来的数据
-      // if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
-      //   // 1.强制清空token
-      //   localStorage.removeItem('token')
-      //   // 2.强制跳转到登录页面
-      //   location.href = '/login.html'
-      // }
+    // console.log('执行了complete回调');
+    // console.log(res);
+    // 在complete回调函数中可以使用res.responseJSON拿到服务器响应回来的数据
+    // if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
+    //   // 1.强制清空token
+    //   localStorage.removeItem('token')
+    //   // 2.强制跳转到登录页面
+    //   location.href = '/login.html'
+    // }
     // }
 
   })
